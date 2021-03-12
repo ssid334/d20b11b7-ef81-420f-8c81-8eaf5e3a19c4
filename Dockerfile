@@ -12,8 +12,6 @@ RUN pip3 install -r requirements.txt
 
 COPY ./main.py /app/main.py
 
-ENTRYPOINT [ "python3" ]
-
 EXPOSE 443
 
-CMD [ "main.py" ]
+CMD [ "python3", "main.py" ]
